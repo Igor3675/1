@@ -1,0 +1,13 @@
+s = input("enter a word: ")
+reverse = s[::-1]
+
+
+def palindrom(s):
+    if s[::1] == reverse:
+        return True
+    if s != reverse:
+        return False
+
+
+
+print(palindrom(s))
